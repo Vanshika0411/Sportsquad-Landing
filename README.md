@@ -76,7 +76,4 @@ npm run dev
 
 ---
 
-## 🌐 Live Demo (Optional)
-
-* [Insert live demo link here if deployed]
 
