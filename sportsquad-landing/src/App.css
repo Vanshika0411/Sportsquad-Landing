@@ -1,0 +1,461 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* Navbar */
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  background: transparent;
+}
+
+/* Center Container */
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #facc15;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #facc15;
+}
+
+/* CTA Button */
+.nav-cta {
+  padding: 8px 20px;
+  background: #facc15;
+  color: black !important;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.nav-cta:hover {
+  transform: scale(1.05);
+  background: #fde047;
+}
+
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1508098682722-e99c643e7f0b")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 58, 138, 0.8),
+    rgba(79, 70, 229, 0.8)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+/* Small Tag */
+.hero-tag {
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* Main Heading */
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  background: linear-gradient(90deg, #facc15, #fde047);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Subtext */
+.hero-subtext {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primary-btn {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #facc15;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+  background: #fde047;
+}
+
+.secondary-btn {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #1e3a8a;
+}
+
+/* Decorative Glow Circle */
+.hero-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #facc15, transparent);
+  border-radius: 50%;
+  top: 20%;
+  right: 15%;
+  filter: blur(80px);
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+
+
+/* Features Section */
+.features {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #eef2ff, #f9fafb);
+  text-align: center;
+}
+
+.features-title {
+  font-size: 32px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1e3a8a, #4f46e5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.feature-card {
+  background: white;
+  padding: 40px 30px;
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(79, 70, 229, 0.25);
+}
+
+/* Icon Circle */
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #1e3a8a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 25px;
+  transition: 0.4s ease;
+}
+
+.feature-card:hover .icon-wrapper {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Features */
+/* .features {
+  padding: 100px 20px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.feature-box {
+  background: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+} */
+
+/* Booking */
+/* .booking {
+  padding: 80px 20px;
+  text-align: center;
+  background: #eef2ff;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+  margin: auto;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.booking-form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.form-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+} */
+/* Booking Section */
+.booking-section {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #4f46e5);
+  color: white;
+}
+
+.booking-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Left Text */
+.booking-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.booking-left h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.booking-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Booking Card */
+.booking-card {
+  flex: 1;
+  min-width: 320px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  box-shadow: 0 0 10px #facc15;
+}
+
+/* Button */
+.booking-btn {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #facc15;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.booking-btn:hover {
+  transform: scale(1.05);
+  background: #fde047;
+}
+
+/* Success Message */
+.form-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #facc15;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .booking-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .booking-left {
+    text-align: center;
+  }
+}
